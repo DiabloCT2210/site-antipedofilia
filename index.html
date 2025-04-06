@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Antipedofilia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #2c2c2c;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #cccccc;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .section h3 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .section p,
+    .section li {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .fatos ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #2c2c2c;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    .denuncia-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: #ff4444;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(255, 68, 68, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .denuncia-btn:hover {
+      background: #ff6666;
+      transform: scale(1.05);
+    }
+
+    .denuncia-btn.clicked {
+      animation: pulse 0.4s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    button, .denuncia-btn, nav a {
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    button:active, .denuncia-btn:active, nav a:active {
+      transform: scale(0.95);
+    }
+
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto Antipedofilia</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#fatos">Fatos</a>
+      <a href="#fale-conosco">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Combate à Pedofilia</h2>
+    <p>Informação, conscientização e ação para proteger nossas crianças e adolescentes.</p>
+  </section>
+
+  <section id="sobre" class="section">
+    <h3>O que é a pedofilia?</h3>
+    <p>Pedofilia é a atração sexual por crianças, considerada uma condição psiquiátrica grave e um crime quando resulta em abuso. É importante entender que, além de ser ilegal, o ato de abusar sexualmente de crianças causa traumas profundos e duradouros. Muitas vezes, os abusadores utilizam da confiança e proximidade para se aproximar das vítimas.</p>
+    <p>Existe também uma rede online preocupante que se utiliza de fóruns, redes sociais e aplicativos para aliciar menores. Por isso, é essencial o acompanhamento dos responsáveis e o uso de ferramentas de segurança digital.</p>
+  </section>
+
+  <section id="fatos" class="fatos section">
+    <h3>Fatos importantes</h3>
+    <ul>
+      <li>Mais de 50% dos abusos ocorrem dentro do ambiente familiar.</li>
+      <li>Meninas e meninos são vítimas, em proporções diferentes.</li>
+      <li>O silêncio da vítima é um dos maiores aliados do abusador.</li>
+      <li>Educação sexual preventiva é uma ferramenta poderosa de proteção.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h3>Como ajudar</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Converse com crianças</h4>
+        <p>Fale abertamente sobre o corpo, limites e confiança. Ouvir sem julgar é essencial.</p>
+      </div>
+      <div class="card">
+        <h4>Denuncie</h4>
+        <p>Em caso de suspeita, disque 100 ou procure o conselho tutelar mais próximo.</p>
+      </div>
+      <div class="card">
+        <h4>Compartilhe informações</h4>
+        <p>Quanto mais pessoas informadas, menor o espaço para os abusadores agirem.</p>
+      </div>
+    </div>
+    <a href="#fale-conosco" id="denunciarBtn" class="denuncia-btn">Denuncie</a>
+  </section>
+
+  <section id="fale-conosco" class="section">
+    <h3>Fale Conosco</h3>
+    <p>Entre em contato para mais informações, denúncias ou parcerias:</p>
+    <p>Email: contato@antipedofilia.org</p>
+    <p>Telefone: (11) 99999-9999</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Projeto Antipedofilia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const denunciarBtn = document.getElementById("denunciarBtn");
+    if (denunciarBtn) {
+      denunciarBtn.addEventListener("click", () => {
+        denunciarBtn.classList.add("clicked");
+        setTimeout(() => denunciarBtn.classList.remove("clicked"), 400);
+      });
+    }
+  </script>
+</body>
+</html>
